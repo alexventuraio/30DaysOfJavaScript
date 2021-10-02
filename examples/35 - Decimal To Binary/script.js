@@ -1,14 +1,15 @@
-let input = document.getElementById('input_number');
-let output = document.getElementById('output_number');
+const input = document.getElementById('input_number');
+const output = document.getElementById('output_number');
 
+function calculate() {
+    const number = input.value;
 
-function calculate(){
-    let number = input.value;
-    if(isNaN(number) || number==""){
+    if (isNaN(number) || number==""){
         alert("given value is not a number");
         output.value = "";
     }
-    if(number==0){
+
+    if (number==0) {
         output.value = 0;
     }
     else{
